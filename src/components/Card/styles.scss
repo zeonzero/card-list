@@ -1,0 +1,36 @@
+@import '../../styles/colors';
+
+.card-item-container {
+  padding: 0 8px;
+
+  .card-item {
+    display: block;
+    width: 312px;
+    height: 180px;
+    padding: 16px;
+    border-radius: 12px;
+    color: $N0;
+    font-weight: 500;
+    cursor: pointer;
+    user-select: none;
+
+    &-name {
+      margin-top: 16px;
+      font-size: 18px;
+      line-height: 24px;
+    }
+
+    &-number {
+      margin-top: 8px;
+      font-size: 16px;
+    }
+
+    &-expiry {
+      margin-top: 8px;
+
+      &-date {
+        margin-top: 8px;
+      }
+    }
+  }
+}

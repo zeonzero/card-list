@@ -1,0 +1,51 @@
+@import './colors';
+* {
+  box-sizing: border-box;
+}
+
+h1, h2, h3, p {
+  margin: 0;
+}
+
+
+span, i {
+  display: inline-block;
+}
+
+a {
+  text-decoration: none;
+}
+
+.button {
+  outline: none;
+  border: none;
+  background-color: transparent;
+  padding: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  user-select: none;
+
+  &.danger {
+    background-color: $N500;
+    color: $N0;
+  }
+
+  &.info {
+    background-color: $R500;
+    color: $N0;
+  }
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-1 {
+  flex: 1 1;
+}
+
+.container {
+  max-width: 1200px;
+  padding: 0 10px;
+  margin: auto;
+}

@@ -1,0 +1,55 @@
+@import '../../styles/colors';
+
+.form-container {
+  user-select: none;
+
+  .form-group {
+    max-width: 360px;
+
+    + .form-group {
+      margin-top: 24px;
+    }
+  }
+
+  .form-input-group {
+    display: flex;
+
+    .currency {
+      line-height: 42px;
+      vertical-align: middle;
+      margin-right: 8px;
+      font-weight: 600;
+    }
+
+    .color-picker {
+      margin-left: auto;
+      width: 42px;
+      height: 42px;
+      border: 1px solid $N300;
+      border-radius: 8px;
+    }
+  }
+
+  .form-input {
+    border-bottom: 1px solid rgba($N300, 0.5);
+    padding: 9px 8px 8px 0;
+
+    input {
+      height: 24px;
+      font-size: 18px;
+      line-height: 24px;
+      border: none;
+      width: 100%;
+      outline: none;
+    }
+  }
+
+  .form-footer {
+    margin-top: 8px;
+    text-align: right;
+
+    button + button {
+      margin-left: 8px;
+    }
+  }
+}

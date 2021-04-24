@@ -1,0 +1,99 @@
+@import '../../styles/colors';
+
+.layout {
+  padding: 24px 0;
+  .card-page {
+    &-header {
+      position: relative;
+
+      .view-all-card {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        margin: auto 0;
+        color: $R500;
+        line-height: 21px;
+        vertical-align: middle;
+        cursor: pointer;
+        user-select: none;
+
+        i {
+          vertical-align: bottom;
+        }
+      }
+    }
+
+    &-body {
+      margin-top: 30px;
+      display: grid;
+      grid-template-columns: 180px calc(100% - 244px);
+      column-gap: 40px;
+
+      .add-new-card {
+        border: 1px dashed rgba($N500, 0.5);
+        border-radius: 24px;
+        max-height: 150px;
+        padding: 24px;
+        cursor: pointer;
+        user-select: none;
+
+        &-icon {
+          width: 56px;
+          height: 56px;
+          margin: auto;
+          background-color: $N300;
+          border-radius: 50%;
+          padding: 16px;
+
+          i {
+            font-size: 24px;
+            color: $N0;
+            transform: rotate(45deg);
+          }
+        }
+
+        &-text {
+          text-align: center;
+          font-size: 18px;
+          line-height: 24px;
+          vertical-align: middle;
+          color: rgba($N500, 0.75);
+          margin-top: 16px;
+          font-weight: 500;
+        }
+      }
+
+      .card-list {
+        .prev-next-arrow {
+          font-size: 100%;
+          line-height: 24px;
+          height: 24px;
+          width: 24px;
+          color: $N500;
+
+          &:before {
+            content: unset;
+          }
+
+          &.prev i {
+            transform: rotate(180deg);
+          }
+
+          i {
+            font-size: 24px;
+          }
+        }
+
+        .slick-track {
+          margin: 0;
+        }
+
+        .slick-dots {
+          bottom: unset;
+          top: -30px;
+        }
+      }
+    }
+  }
+}

@@ -1,12 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
+import './styles/index.scss';
+import App from './components/Layout';
+import { CardContextProvider } from "./context/cardContext";
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <CardContextProvider>
+      <App />
+    </CardContextProvider>
   </React.StrictMode>,
   document.getElementById('root')
 );
